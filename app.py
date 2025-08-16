@@ -43,6 +43,7 @@ def chat(message, history):
 
   reply = response.choices[0].message.content
   evaluation = evaluate(reply, message, history)
+
   if not evaluation.is_acceptable:
     print("Failed evaluation - retrying")
     print(evaluation.feedback)
