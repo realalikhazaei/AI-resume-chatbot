@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Install gradio
+        uses: python -m pip install gradio
+
       - name: Setup uv
         uses: astral-sh/setup-uv@v1
 
